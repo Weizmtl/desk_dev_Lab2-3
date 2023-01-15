@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lab2Q4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2Q4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="485" Width="800">
+    <Grid>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Starting Number of Organisms:" Margin="10,10,587,435" />
+        <TextBox Grid.Row="0" x:Name="txtStartingNumber" Margin="446,10,186,435" RenderTransformOrigin="0.964,0.538" />
+
+        <Label Grid.Column="0" Content="Average Daily Population Increase (%):" Margin="10,68,558,371" RenderTransformOrigin="0.152,-0.493" />
+        <TextBox x:Name="txtDailyIncrease" Margin="446,70,186,370" />
+
+        <Label Grid.Column="0" Content="Number of Days to Multiply:" Margin="10,135,607,307" />
+        <TextBox x:Name="txtDaysMultiply" Margin="446,135,186,307" RenderTransformOrigin="0.438,-1.471" />
+
+        <Button Content="Predict Population" Click="btnPredict_Click" Margin="78,189,93,201" />
+
+        <TextBox Grid.Column="0" x:Name="txtOutput" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Margin="242,288,298,62" />
+
+    </Grid>
+</Window>
